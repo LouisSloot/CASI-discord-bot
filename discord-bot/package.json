@@ -1,0 +1,13 @@
+{
+  "name": "switchbot-discord-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js",
+    "list-devices": "node bot.js --list-devices"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^17.2.4"
+  }
+}
