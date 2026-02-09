@@ -138,5 +138,6 @@ if (process.argv.includes("--list-devices")) {
       process.exit(1);
     });
 } else {
+  console.log("Token exists:", !!CONFIG.DISCORD_TOKEN);
   client.login(CONFIG.DISCORD_TOKEN);
 }
