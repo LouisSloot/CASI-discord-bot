@@ -1,6 +1,7 @@
 import "dotenv/config";
 import { Client, GatewayIntentBits, Events } from "discord.js";
 import crypto from "crypto";
+import http from "http";
 
 // ─── Configuration ───────────────────────────────────────────────
 const CONFIG = {
@@ -139,5 +140,6 @@ if (process.argv.includes("--list-devices")) {
     });
 } else {
   console.log("Token exists:", !!CONFIG.DISCORD_TOKEN);
+  http.createServer((_, res) => res.end("ok")).listen(process.env.PORT || 3000);
   client.login(CONFIG.DISCORD_TOKEN);
 }
