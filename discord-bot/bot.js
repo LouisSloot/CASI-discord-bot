@@ -7,7 +7,7 @@ import http from "http";
 const CONFIG = {
   // Discord
   DISCORD_TOKEN: process.env.DISCORD_TOKEN,
-  ALLOWED_CHANNEL_NAME: process.env.ALLOWED_CHANNEL || "core-members", // channel name or ID
+  ALLOWED_CHANNEL_NAME: process.env.ALLOWED_CHANNEL || "core-members-office-access", // channel name or ID
 
   // SwitchBot API v1.1
   SWITCHBOT_TOKEN: process.env.SWITCHBOT_TOKEN,
